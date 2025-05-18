@@ -122,6 +122,12 @@ nav {
   border-radius: 70px;
 }
 
+.talk:hover {
+  background-color: #fff;
+  color: #3461ff;
+  border: 1px solid #3461ff;
+}
+
 .hero-img {
   max-width: 100%;
   padding-top: 70px;
@@ -640,36 +646,51 @@ li {
 /* RESPONSIVENESS */
 
 /* || MOBILE */
-/* @media screen and (max-width: 481px) {
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
   .nav-links {
-    display: none; 
+    display: none;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
   }
 
   .book {
-  display: none;
+    display: none;
   }
 
   .hamburger {
     display: block;
   }
 
+  .hero-section {
+    margin-bottom: 0;
+  }
+
   .hero h1 {
-    font-size: 85px;
+    width: 500px;
+    height: 286px;
+    font-size: 25px;
     text-align: center;
+  }
+
+  .hero-img {
+    display: none;
   }
 
   .hero-form {
     justify-content: center;
   }
 
-  .hero-img {
-    width: 100%;
+  .companies-section {
+    margin-top: 0;
   }
 
-  .companies-section h2 {
+  .header {
     text-align: center;
   }
 
@@ -679,13 +700,16 @@ li {
     align-items: center;
   }
 
-  .commitment h4, .commit-div h3, .how-heading h3, .work-heading h3, .team-div h3, .about-section h3 {
+  h2.heading {
     font-size: 50px;
     text-align: center;
   }
 
-  .commit-div p, .commitment p, .how-heading p, .team-div p {
-    font-size: 18px;
+  .commit-div p,
+  .commitment p,
+  .how-heading p,
+  .team-div p {
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -714,14 +738,13 @@ li {
     top: 65%;
     left: 50%;
   }
-  
-} */
+}
 
-/* || MEDIUM */
+/* || TABLET */
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-links {
-    display: none; 
+    display: none;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -796,12 +819,16 @@ li {
 
   .how-heading p {
     font-size: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 9rem;
   }
 
   .how-contents p {
     padding-top: 5px;
     font-size: 20px;
+  }
+
+  .how {
+    padding-top: 30px;
   }
 
   .work-heading h3 {
@@ -825,25 +852,26 @@ li {
   }
 
   .image-heading {
-    font-size: 40px;
-    top: 25%;
-    right: 50%;
-    padding-left: 40px;
+    font-size: 15px;
+    width: 330px;
+    height: 50px;
+    top: 65%;
+    left: 3%;
   }
 
   .contact-div p {
     font-size: 15px;
     line-height: 1.5;
-    width: 300px;
-    top: 28%;
-    left: 58%;
+    width: 370px;
+    top: 65%;
+    right: 10%;
   }
 
   .call {
-    font-size: 13px;
+    font-size: 20px;
     padding: 8px 18px;
-    top: 65%;
-    left: 57%;
+    top: 35%;
+    right: 33%;
   }
 
   .our-team {
@@ -884,14 +912,15 @@ li {
 
   .img-heading {
     font-size: 35px;
-    top: 25%;
-    right: 50%;
+    top: 18%;
+    left: 0%;
     padding-left: 40px;
   }
 
   .start {
-    font-size: 13px;
+    font-size: 18px;
     padding: 8px 18px;
+    margin-top: 8px;
     top: 66%;
     right: 82%;
   }
@@ -909,7 +938,7 @@ li {
 
   .help-question h5 {
     font-size: 20px;
-  } 
+  }
 
   .help-content h6 {
     padding-top: 30px;
@@ -937,12 +966,31 @@ li {
     gap: 10px;
     padding: 20px;
   }
-} */
+}
 
 /* || XL LARGE */
-/* @media screen and (max-width: 1025px) {
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+
   .nav-links {
     gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 85px;
+    width: 480px;
+    height: 286px;
+  }
+
+  .how-div {
+    gap: 50px;
+  }
+
+  .how-heading {
+    padding-top: 10px;
   }
 
   .our-works {
@@ -974,5 +1022,4 @@ li {
     top: 65%;
     right: 78%;
   }
-  
-} */
+}
